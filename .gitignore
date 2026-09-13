@@ -1,0 +1,13 @@
+# 测速端二进制
+/speedtester/satchel-speedtester
+/speedtester/satchel-speedtester.exe
+/dist/
+*.test
+
+# 本地工具
+.idea/
+.vscode/
+.DS_Store
+.claude/
+.cursor/
+.agents/
