@@ -10,6 +10,10 @@ Satchel（百宝袋）的三合一仓库，对应 mmwx 的 mmwX-plugins：
 
 **状态：M0 骨架阶段，只有空壳。**
 
+## 发布
+
+打 tag `v*` 触发 `.github/workflows/release.yml`：构建后签名 job 停在受保护环境 `release-signing` 等仓库拥有者批准，签名程序检出 `satchel` 仓库的 `tools/sign` 来跑（一把发布密钥签三个二进制），产物与 `.sig`、`checksums.txt` 挂到 GitHub Release。
+
 ## 构建
 
 ```sh
