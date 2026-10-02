@@ -1,5 +1,5 @@
 # skills
 
-给 AI 用的 skills 手册（技术方案第 05 章功能⑥）：每个 skill 一个子目录，装一份 SKILL.md 与它需要的辅助文件，讲清楚「在什么场景、按什么顺序、调哪些 `satchel` 命令」。
+Satchel 的 skills（写给 AI 的操作手册，技术方案第 05 章功能⑥）不在这个仓库：它们放在主控仓库 `satchel` 的 `internal/base/skills/files/`，编进 `satchel` 二进制，由 `satchel mcp init` 装进 AI runtime 的 skills 目录，见 `satchel` 的 README「skills：写给 AI 的操作手册」一节。
 
-从 M1 起随功能交付。「命令 × skills」的 CI 校验（每条 skill 提到的命令都必须真实存在）随 M1 一起定落点——放在哪个仓库、怎么检出另一边，M1 的 change 说了算。M0 只有这份说明。
+放在 `satchel` 里，是为了让 skills 与命令表在同一个仓库：测试直接检查 skills 里写的每条 `satchel` 命令都存在、每条命令都有 skill 讲到，`satchel` 升级时装上的 skills 也总是同一个版本。这个目录只留这份说明。
